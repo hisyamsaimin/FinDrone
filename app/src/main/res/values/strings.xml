@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FinDrone</string>
+    <string name="title_activity_second_page">SecondPage</string>
+    <string name="title_activity_second">Map</string>
+    <string name="title_activity_map__view">Map</string>
+    <string name="title_activity_test_map">Map</string>
+    <string name="title_activity_map_view">Map</string>
+    <string name="title_activity_server">Server</string>
+</resources>

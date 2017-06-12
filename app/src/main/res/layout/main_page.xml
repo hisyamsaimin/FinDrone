@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.hisyamsaimin.findrone.MainPage">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center|center_vertical"
+            android:text="Rescue Mission"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="221dp" />
+
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="50px"
+            android:gravity="center|top">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="282dp"
+            android:layout_height="162dp"
+            android:layout_marginTop="110px"
+            android:gravity="center|center_vertical"
+            app:srcCompat="@drawable/findrone_logo"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="59dp" />
+
+
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="50px"
+            android:gravity="center|top">
+
+
+</LinearLayout>
+        <Button
+            android:id="@+id/button1"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#008000"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="ENTER"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+
