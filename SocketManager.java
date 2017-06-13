@@ -41,6 +41,7 @@ public class SocketManager {
     PrintWriter out_drone1, out_drone2;
     BufferedReader in_drone1, in_drone2;
     boolean finished = false;
+    SecondPage secondPage;
     TextView tv_numberofdrone;
     MapView mapView;
 
@@ -58,6 +59,10 @@ public class SocketManager {
         tv_numberofdrone = tv;
     }
 
+    public void setSecondPage(SecondPage secondPage) {
+        this.secondPage = secondPage;
+    }
+
     public void set_mapView(MapView mapView)
     {
         this.mapView = mapView;
@@ -65,7 +70,7 @@ public class SocketManager {
 
     private SocketManager() throws Exception{
         ss = new ServerSocket(PORT);
-
+        counter = 0;
         Thread listen = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -128,7 +133,13 @@ public class SocketManager {
             }
         }
         if(tv_numberofdrone!=null){
-            tv_numberofdrone.setText(String.valueOf(counter));
+            secondPage.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    tv_numberofdrone.setText(String.valueOf(counter));
+                }
+            });
+
         }
     }
 

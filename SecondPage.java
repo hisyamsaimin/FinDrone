@@ -58,6 +58,7 @@ public class SecondPage extends AppCompatActivity {
 
         try {
             socketManager = SocketManager.getSocketManager();
+            socketManager.setSecondPage(this);
             socketManager.set_textView_numberDrones(tv_numofDrone);
         } catch (Exception e) {
             e.printStackTrace();
